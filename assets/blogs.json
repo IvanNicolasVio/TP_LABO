@@ -1,0 +1,16 @@
+[
+    {
+        "imagen": "./assets/images/blog1.jpg",
+        "titulo": "Terraza en el techo de tu casa",
+        "fecha": "20/10/2019",
+        "autor": "Ivan",
+        "contenido": "Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero."
+    },
+    {
+        "imagen": "./assets/images/blog2.jpg",
+        "titulo": "Guía para la decoración de tu hogar",
+        "fecha": "20/10/2019",
+        "autor": "Rodolfo",
+        "contenido": "Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio."
+    }
+]

@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>In-Mo-Vi-Lia-Ria</title>
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/blog_coment.css">
+    <link rel="stylesheet" href="./styles/bootstrapCss/bootstrap.min.css">
+    <script src="./js/bootsrapJs/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootsrapJs/popper.min.js"></script>
+    <script src="./js/bootsrapJs/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>Bienes Raices</title>
 </head>
 <body>
     <header>
         <div class="barra">
-            <img src="../Inmobiliaria/assets/images/logo.svg" alt="Logo principal">
+            <img src="./assets/images/logo.svg" alt="Logo principal">
             <nav>
                 <ul>
                     <li><a href="#">Nosotros</a></li>
@@ -19,7 +27,7 @@
                 </ul>
             </nav>
         </div>
-        <h1>Venta de casas y departamentos en Lomas de Zamora</h1>
+        <h1>Venta de casas y departamentos</h1>
     </header>
 
     <div class="container-sections">
@@ -27,74 +35,104 @@
             <h2>Mas sobre nosotros</h2>
             <div id="container-details" class="container-details">
                 <div class="container-detail">
-                    <img src="../Inmobiliaria/assets/images/seguridadicon.svg" alt="icono Seguridad">
-                    <h3>Seguridad</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatum vitae neque. Quibusdam repellat maxime impedit dicta debitis iure earum dolorum quasi quis nemo vel, quia voluptate accusantium voluptatibus optio?</p>
+                    <img src="./assets/images/icono1.svg" alt="icono Seguridad">
+                    <h3>SEGURIDAD</h3>
+                    <p>En Bienes Raíces, la seguridad de nuestros clientes es nuestra prioridad. Implementamos las mejores prácticas y tecnologías de seguridad para asegurar que cada transacción sea segura y confiable. Desde la verificación de propiedades hasta la protección de datos personales, garantizamos que cada paso del proceso sea transparente y protegido. Confía en nosotros para brindarte un entorno seguro en la búsqueda de tu hogar ideal.</p>
                 </div>
 
                 <div class="container-detail">
-                    <img src="../Inmobiliaria/assets/images/moneyicon.svg" alt="Icono precio">
-                    <h3>Mejor precio</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, doloribus assumenda aliquid eveniet, dolor enim quisquam atque rerum, iusto cumque obcaecati nulla. Officia consectetur sit, quae nobis provident soluta blanditiis!</p>
+                    <img src="./assets/images/icono2.svg" alt="Icono precio">
+                    <h3>MEJOR PRECIO</h3>
+                    <p>Nos comprometemos a ofrecerte las mejores ofertas del mercado. Trabajamos incansablemente para negociar precios justos y competitivos, asegurando que encuentres la propiedad de tus sueños sin comprometer tu presupuesto. Nuestra red de contactos y experiencia en el sector inmobiliario nos permite presentarte opciones que se ajustan a tus necesidades económicas, sin sacrificar calidad ni ubicación.</p>
                 </div>
 
                 <div class="container-detail">
-                    <img src="../Inmobiliaria/assets/images/timeicon.svg" alt="icono tiempo">
-                    <h3>A tiempo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, ullam repudiandae placeat, sequi eligendi molestias porro molestiae neque provident facilis sapiente minus numquam accusamus, sed eum quibusdam obcaecati in.</p>
+                    <img src="./assets/images/icono3.svg" alt="icono tiempo">
+                    <h3>A TIEMPO</h3>
+                    <p>En Bienes Raíces, entendemos que el tiempo es valioso. Por eso, nos enfocamos en ofrecerte un servicio eficiente y puntual. Desde la primera consulta hasta la firma del contrato, nuestro equipo de profesionales se asegura de que cada etapa del proceso se complete en el tiempo acordado. Valoramos tu tiempo y nos comprometemos a cumplir con nuestros plazos, brindándote una experiencia sin demoras innecesarias.</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Casas y departamentos en venta</h2>
-            <div>
-                <img src="../Inmobiliaria/assets/images/barrioingles.jpg" alt="anuncio 1">
-                <h3>Casa en barrio ingles</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur facilis corrupti, amet a culpa explicabo quia velit, distinctio labore repellendus nesciunt fugiat ex incidunt corporis, sit assumenda officia commodi!</p>
-                <b>u$d 350.000</b>
-            </div>
-
-            <div>
-                <img src="../Inmobiliaria/assets/images/banfield.jpg" alt="anuncio 2">
-                <h3>Casa en Banfield</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur facilis corrupti, amet a culpa explicabo quia velit, distinctio labore repellendus nesciunt fugiat ex incidunt corporis, sit assumenda officia commodi!</p>
-                <b>u$d 250.000</b>
-            </div>
-
-            <div>
-                <img src="../Inmobiliaria/assets/images/pileta.jpg" alt="anuncio 3">
-                <h3>Casa con Pileta</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur facilis corrupti, amet a culpa explicabo quia velit, distinctio labore repellendus nesciunt fugiat ex incidunt corporis, sit assumenda officia commodi!</p>
-                <b>u$d 450.000</b>
+        <section class="properties py-5 bg-light">
+            <div class="container text-center">
+                <h2>Casas y Departamentos en Venta</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./assets/images/anuncio1.jpg" class="card-img-top" alt="Casa de Lujo en el Lago">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa de Lujo en el Lago</h5>
+                                <p class="card-text">Casa en el lago con excelente vistas, acabados de lujo a un excelente precio</p>
+                                <p class="price">US$350.000</p>
+                                <a href="#" class="btn btn-primary">Ver Propiedad</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./assets/images/anuncio2.jpg" class="card-img-top" alt="Casa terminados de lujo">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa terminados de lujo</h5>
+                                <p class="card-text">Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
+                                <p class="price">US$275.000</p>
+                                <a href="#" class="btn btn-primary">Ver Propiedad</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./assets/images/anuncio3.jpg" class="card-img-top" alt="Casa con Pileta">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa con Pileta</h5>
+                                <p class="card-text">Casa con pileta y acabados de lujo en la ciudad, excelente oportunidad</p>
+                                <p class="price">US$250.000</p>
+                                <a href="#" class="btn btn-primary">Ver Propiedad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-secondary mt-3">Ver Todas</a>
             </div>
         </section>
 
-        <section>
-            <h2>Encontra la casa de tus sueños</h2>
+        <section class="contact py-5">
+            <div class="container text-center">
+                <h2>Encuentra la casa de tus sueños</h2>
+                <p>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</p>
+                <a href="#" class="btn btn-warning">Contáctanos</a>
+            </div>
         </section>
 
-        <section>
-            <h2>Nuestro blog</h2>
-            <img src="" alt="blog 1">
-            <h3>Terraza en el techo de tu casa</h3>
-
-            <img src="" alt="blog 2">
-            <h3>Guia para la decoracion de tu hogar</h3>
-            <h2>Comentarios</h2>
+        <section class="blog-and-comments py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Nuestro Blog</h2>
+                        <div id="blog-container"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Comentarios</h2>
+                        <div id="comment-container" class="comment-box">
+                            <p id="comment-text" class="comment-text"></p>
+                            <p id="comment-author" class="comment-author"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Anuncio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
+    <footer class="bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="list-unstyled mb-0 d-flex">
+                <li class="me-3"><a href="#" class="text-light">Nosotros</a></li>
+                <li class="me-3"><a href="#" class="text-light">Anuncios</a></li>
+                <li class="me-3"><a href="#" class="text-light">Blog</a></li>
+                <li><a href="#" class="text-light">Contacto</a></li>
             </ul>
-        </nav>
-        <p>Todos los derechos reservados &copy;</p>
+            <p class="mb-0">Todos los Derechos Reservados 2024 &copy;</p>
+        </div>
     </footer>
 </body>
 </html>
