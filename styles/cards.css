@@ -12,6 +12,30 @@
     padding: 50px 0;
 }
 
+.contact .btn-warning{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.contact .btn-warning:hover {
+    background-color: #0b5ed7; 
+    border-color: #0b5ed7;
+    color: white;
+}
+
+.custom-btn:hover{
+    background-color: #aaf0d1 !important;
+    border-color: #aaf0d1 !important;
+    color: white !important; 
+}
+
+.custom-btn{
+    background-color: #39ee9d !important;
+    border-color: #39ee9d !important;
+    color: white !important;
+}
+
 .properties .card {
     margin-bottom: 20px;
 }
@@ -20,3 +44,5 @@
     color: green;
     font-weight: bold;
 }
+
+
