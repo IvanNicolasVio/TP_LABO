@@ -74,4 +74,8 @@ header h1{
         font-size: 27px;
     }
 }
+.container-detail img {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
 

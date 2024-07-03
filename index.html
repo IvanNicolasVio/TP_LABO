@@ -34,67 +34,39 @@
         <section>
             <h2>Mas sobre nosotros</h2>
             <div id="container-details" class="container-details">
-                <div class="container-detail">
-                    <img src="./assets/images/icono1.svg" alt="icono Seguridad">
-                    <h3>SEGURIDAD</h3>
-                    <p>En Bienes Raíces, la seguridad de nuestros clientes es nuestra prioridad. Implementamos las mejores prácticas y tecnologías de seguridad para asegurar que cada transacción sea segura y confiable. Desde la verificación de propiedades hasta la protección de datos personales, garantizamos que cada paso del proceso sea transparente y protegido. Confía en nosotros para brindarte un entorno seguro en la búsqueda de tu hogar ideal.</p>
-                </div>
-
-                <div class="container-detail">
-                    <img src="./assets/images/icono2.svg" alt="Icono precio">
-                    <h3>MEJOR PRECIO</h3>
-                    <p>Nos comprometemos a ofrecerte las mejores ofertas del mercado. Trabajamos incansablemente para negociar precios justos y competitivos, asegurando que encuentres la propiedad de tus sueños sin comprometer tu presupuesto. Nuestra red de contactos y experiencia en el sector inmobiliario nos permite presentarte opciones que se ajustan a tus necesidades económicas, sin sacrificar calidad ni ubicación.</p>
-                </div>
-
-                <div class="container-detail">
-                    <img src="./assets/images/icono3.svg" alt="icono tiempo">
-                    <h3>A TIEMPO</h3>
-                    <p>En Bienes Raíces, entendemos que el tiempo es valioso. Por eso, nos enfocamos en ofrecerte un servicio eficiente y puntual. Desde la primera consulta hasta la firma del contrato, nuestro equipo de profesionales se asegura de que cada etapa del proceso se complete en el tiempo acordado. Valoramos tu tiempo y nos comprometemos a cumplir con nuestros plazos, brindándote una experiencia sin demoras innecesarias.</p>
-                </div>
+                <template id="detail-template">
+                    <div class="container-detail">
+                        <img src="" alt="" class="icon">
+                        <h3 class="title"></h3>
+                        <p class="content"></p>
+                    </div>
+                </template>
             </div>
         </section>
 
-        <section class="properties py-5 bg-light">
-            <div class="container text-center">
-                <h2>Casas y Departamentos en Venta</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./assets/images/anuncio1.jpg" class="card-img-top" alt="Casa de Lujo en el Lago">
-                            <div class="card-body">
-                                <h5 class="card-title">Casa de Lujo en el Lago</h5>
-                                <p class="card-text">Casa en el lago con excelente vistas, acabados de lujo a un excelente precio</p>
-                                <p class="price">US$350.000</p>
-                                <a href="#" class="btn btn-primary">Ver Propiedad</a>
+        <div class="container-sections">
+            <section class="properties py-5 bg-light">
+                <div class="container text-center">
+                    <h2>Casas y Departamentos en Venta</h2>
+                    <div class="row" id="property-cards">
+                        <template id="card-template">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text"></p>
+                                        <p class="price"></p>
+                                        <a href="#" class="btn btn-primary">Ver Propiedad</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </template>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./assets/images/anuncio2.jpg" class="card-img-top" alt="Casa terminados de lujo">
-                            <div class="card-body">
-                                <h5 class="card-title">Casa terminados de lujo</h5>
-                                <p class="card-text">Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
-                                <p class="price">US$275.000</p>
-                                <a href="#" class="btn btn-primary">Ver Propiedad</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./assets/images/anuncio3.jpg" class="card-img-top" alt="Casa con Pileta">
-                            <div class="card-body">
-                                <h5 class="card-title">Casa con Pileta</h5>
-                                <p class="card-text">Casa con pileta y acabados de lujo en la ciudad, excelente oportunidad</p>
-                                <p class="price">US$250.000</p>
-                                <a href="#" class="btn btn-primary">Ver Propiedad</a>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#" class="btn btn-secondary custom-btn mt-3">Ver Todas</a>
                 </div>
-                <a href="#" class="btn btn-secondary custom-btn mt-3">Ver Todas</a>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="contact py-5">
             <div class="container text-center">

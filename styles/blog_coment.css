@@ -1,4 +1,3 @@
-
 .blog-and-comments .blog-post {
     display: flex;
     align-items: flex-start;
@@ -17,7 +16,29 @@
 
 .blog-and-comments .blog-post h3 {
     color: #333;
-    margin: 0; 
+    margin: 0 0 10px 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.blog-and-comments .blog-post h3::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #333;
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+}
+
+.blog-and-comments .blog-post h3:hover::after {
+    width: 100%;
+    left: 0;
+    background: #333;
 }
 
 .blog-and-comments .blog-post p {
@@ -51,7 +72,6 @@
     font-size: 18px;
     line-height: 1.6;
     color: #333;
-    
 }
 
 .comment-box .comment-author {

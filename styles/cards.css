@@ -1,9 +1,13 @@
-.card-img-top {
+.card {
     transition: transform 0.3s ease-in-out;
 }
 
-.card-img-top:hover {
+.card:hover {
     transform: scale(1.1);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease-in-out; /* Puedes eliminar esta línea si no deseas una transición en la imagen */
 }
 
 .contact {
@@ -44,5 +48,3 @@
     color: green;
     font-weight: bold;
 }
-
-
