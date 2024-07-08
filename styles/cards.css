@@ -7,7 +7,7 @@
 }
 
 .card-img-top {
-    transition: transform 0.3s ease-in-out; /* Puedes eliminar esta línea si no deseas una transición en la imagen */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .contact {
